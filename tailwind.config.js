@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./build/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'cinzel': ['"Cinzel"', 'serif'],
+        'open-sans': ['"Open Sans"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
