@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="flex h-screen">
+  <body class="flex h-screen p-5 bg-gradient-to-r from-yellow-100 to-sky-100">
     <div class="relative h-screen w-2/5">
       <img
         src="img/trooper.jpg"
@@ -34,74 +34,117 @@
     </div>
     <div class="width-3/5 flex h-screen flex-col font-open-sans">
       <div
-        class="flex h-1/3 items-center justify-center bg-slate-100 p-5 text-center text-lg"
+        class="flex h-1/3 items-center justify-center bg-sky-100 p-5 text-center text-lg"
       >
         Oftentimes, us LEGO pieces struggle to find meaning in our banal blocky
         being. And so, LEGO partner is here to help. After making an account,
         you too can find the missing link in your life. The blocky queen to
         treat you right.
       </div>
-      <div class="h-1/3 p-10">
-        <fieldset class="flex gap-5 p-10">
-          <div class="flex flex-col gap-5">
-            <div>
-              <label for="first_name" class="block">First Name</label>
+      <div class="h-50 p-10 bg-sky-50">
+        <form method="post" class="flex gap-16 p-10 justify-center">
+          <div class="flex flex-col gap-10 ">
+            <div class="relative">
               <input
                 type="text"
                 id="first_name"
                 name="first"
-                class="rounded border-2 invalid:border-rose-500"
-                required
+                class="peer border-b-2 p-1 placeholder-transparent invalid:border-rose-500 focus:outline-none bg-sky-50"
+                placeholder="First Name"
               />
+              <label
+                for="first_name"
+                class="absolute left-1 -top-3.5 text-sm text-gray-600 transition-all peer-placeholder-shown:top-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:left-1 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-gray-600"
+                >First Name</label
+              >
             </div>
-            <div>
-              <label for="email" class="block">Email</label>
+            <div class="relative">
               <input
                 type="email"
                 name="mailing"
                 id="email"
-                class="rounded border-2"
+                class="peer border-b-2 p-1 placeholder-transparent invalid:border-rose-500 focus:outline-none bg-sky-50"
+                placeholder="nothing"
               />
+              <label
+                for="email"
+                class="absolute left-1 -top-3.5 text-sm text-gray-600 transition-all peer-placeholder-shown:top-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:left-1 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-gray-600"
+                >Email</label
+              >
             </div>
-            <div>
-              <label for="password" class="block">Password</label>
+            <div class="relative">
               <input
                 type="password"
                 name="password"
                 id="password"
-                class="rounded border-2"
+                class="peer border-b-2 p-1 placeholder-transparent invalid:border-rose-500 focus:outline-none bg-sky-50"
+                placeholder="nothing"
               />
+              <label
+                for="password"
+                class="absolute left-1 -top-3.5 text-sm text-slate-600 transition-all peer-placeholder-shown:top-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:left-1 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-slate-600"
+                >Password</label
+              >
             </div>
           </div>
-          <div class="flex flex-col gap-5">
-            <div>
-              <label for="last_name" class="block">Last Name</label>
+          <div class="flex flex-col gap-10">
+            <div class="relative">
               <input
                 type="text"
                 id="last_name"
                 name="last"
-                class="rounded border-2"
+                class="peer border-b-2 p-1 placeholder-transparent invalid:border-rose-500 focus:outline-none bg-sky-50"
+                placeholder="nothing"
               />
+              <label
+                for="last_name"
+                class="absolute left-1 -top-3.5 text-sm text-slate-600 transition-all peer-placeholder-shown:top-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:left-1 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-slate-600"
+                >Last Name</label
+              >
             </div>
-            <div>
-              <label for="telephone" class="block">Phone Number</label>
+            <div class="relative">
               <input
                 type="tel"
                 id="telephone"
                 name="number"
-                class="rounded border-2"
+                class="peer border-b-2 p-1 placeholder-transparent invalid:border-rose-500 focus:outline-none bg-sky-50"
+                placeholder="nothing"
               />
+              <label
+                for="telephone"
+                class="absolute left-1 -top-3.5 text-sm text-slate-600 transition-all peer-placeholder-shown:top-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:left-1 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-slate-600"
+                >Phone Number</label
+              >
             </div>
-            <div>
-              <label for="confimation" class="block">Confirm Password</label>
-              <input type="password" id="confirmation" name="confirm" class="border-2 rounded"/>
-            </div>
+            <div class="relative">
+                <input
+                  type="password"
+                  name="conf_password"
+                  id="conf_password"
+                  class="peer border-b-2 p-1 placeholder-transparent invalid:border-rose-500 focus:outline-none bg-sky-50"
+                  placeholder="nothing"
+                />
+                <label
+                  for="conf_password"
+                  class="absolute left-1 -top-3.5 text-sm text-slate-600 transition-all peer-placeholder-shown:top-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:left-1 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-slate-600"
+                  >Confirm Password</label
+                >
+              </div>
           </div>
-        </fieldset>
+        </form>
       </div>
-      <div class="h-1/3 bg-slate-100">
+      <div class="bg-sky-100 flex flex-col p-5 gap-10 items-center flex-1">
 
-        
+        <div>
+
+            <button type="submit" class="transition-all border-2 rounded-xl pt-1 pb-1 pr-5 pl-5 bg-sky-500 text-slate-50 hover:pr-10 hover:pl-10 hover:pt-2 hover:pb-2 hover:text-lg">Sign up</button>
+
+        </div>
+        <div>
+
+            Already have an account? <a href="#" class="text-sky-500 hover:text-sky-600">Log in</a>
+
+        </div>
 
       </div>
     </div>
